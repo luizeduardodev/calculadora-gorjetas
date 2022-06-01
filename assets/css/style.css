@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700?|PT++Mono);
+
+/* Reset geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+/* Variaveis */
+:root{
+    --primary-color: lightcoral;
+    --secundary-color: DimGrey;
+    --tertiary-color: GainsBoro;
+}
+body{
+    background-color: lightcoral;
+}
+.container-geral{
+    height: 520px;
+    width: 350px;
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 5px var(--tertiary-color);
+    border-radius: 20px;
+}
+.container-geral h1{
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    color: var(--secundary-color);
+    background-color: var(--tertiary-color);
+}
+.container-geral .tips-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 20px 0px 0 40px;
+}
+.container-geral .tips-form .label p{
+    font-size: 1rem;
+}
+.container-geral .tips-form .form-input{
+    width: 70px;
+    padding: 5px 5px 8px 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+.container-geral .tips-form .form-input:focus{
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+.container-geral .tips-form .form-select{
+    width: 180px;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+.container-geral .tips-form .form-select:focus{
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+.container-geral .tips-form .people{
+    font-size: 1rem;
+}
+.container-geral .tips-form .form-submit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+}
+.container-geral #total-tip{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.container-geral .total-tipp.transition{
+    transition: 1s ease-out;
+}

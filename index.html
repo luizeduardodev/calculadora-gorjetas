@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Calculadora de Gorjetas</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="container-geral">
+            <h1>Calculadora de Gorjetas</h1>
+
+            <form class="tips-form" id="tips-form">
+                <label for="bill" class="label">
+                    <p>Quanto ficou na conta?</p>
+                </label>
+                <span>
+                    R$
+                    <input
+                        type="number"
+                        placeholder="100"
+                        name="bill"
+                        id="bill"
+                        class="form-input"
+                        required
+                    />
+                </span>
+
+                <label for="service-quali">
+                    <p>Como foi seu serviço?</p>
+                </label>
+                <span>
+                    <select
+                        name="service-quali"
+                        id="service-quali"
+                        class="form-select"
+                    >
+                        <option disabled selected value="0">
+                            -- Escolha uma opção --
+                        </option>
+                        <option value="0.3">30%- Incrível</option>
+                        <option value="0.2">20% - Bom</option>
+                        <option value="0.15">15% - Aceitável</option>
+                        <option value="0.10">10% - Ruim</option>
+                        <option value="0.05">5% - Pesssímo</option>
+                    </select>
+                </span>
+
+                <label for="people">
+                    <p class="people">Quantas pessoas vão dividir a conta?</p>
+                </label>
+                <span>
+                    <input
+                        type="number"
+                        placeholder="1"
+                        name="people"
+                        id="people"
+                        class="form-input"
+                        required
+                    />
+                    Pessoa(s)
+                </span>
+
+                <button type="submit" class="form-submit">Calcular</button>
+            </form>
+
+            <div id="total-tip" class="total-tipp">
+                Gorjeta total: R$
+                <span id="tip">0.00</span>
+                <span id="each">Cada</span>
+            </div>
+        </div>
+
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
