@@ -7,8 +7,8 @@ totalTip.style.display = "none";
 each.style.display = "none";
 
 tipsForm.addEventListener("submit", (event) => {
-    event.preventDefault(); //Não deixa a pagina recarregar quando o submit for acionado.
-    
+    event.preventDefault();
+
     let bill = document.getElementById("bill").value;
     let serviceQual = document.getElementById("service-quali").value;
     let numPeople = document.getElementById("people").value;
@@ -23,18 +23,16 @@ tipsForm.addEventListener("submit", (event) => {
         }
     }
 
-    if (numPeople == " " || numPeople <= 1) {
+    if (numPeople == "" || numPeople <= 1) {
         numPeople = 1;
         each.style.display = "none";
     } else {
         each.style.display = "block";
-        each.style.transition = "all 1s";
     }
-    
+
     let total = (bill * serviceQual) / numPeople;
     total = total.toFixed(2);
-    
+
     tip.innerHTML = total;
     totalTip.style.display = "block";
-    // totalTip.classList.add("transition");
 });
