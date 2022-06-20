@@ -1,0 +1,162 @@
+@use "variables";
+
+.tips-form-container-label {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    width: 100%;
+
+    font-size: 1.8rem;
+
+    text-align: center;
+}
+
+.span-input {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-color: variables.$bg-color;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        width: 35rem;
+        height: 52rem;
+
+        box-shadow: 0.2rem 0.2rem 0.2rem variables.$tertiary-color;
+        border-radius: 0.5rem;
+
+        background-color: variables.$bg-color-container;
+
+        h1 {
+            width: 100%;
+
+            padding: 2rem;
+            font-size: 1.8rem;
+
+            border-radius: 0.5rem 0.5rem 0 0;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+
+            background-color: variables.$tertiary-color;
+            color: variables.$secundary-color;
+        }
+
+        .tips-form {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 1.5rem;
+            padding-block: 2rem;
+
+            span {
+                font-size: 1.5rem;
+            }
+
+            .form-input {
+                width: 50%;
+
+                padding-block: 1rem;
+                padding-inline: 1rem;
+
+                font-size: 1.5rem;
+
+                border-radius: 0.2rem;
+
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #000;
+                background-color: #fff;
+                transition: border 0.3s;
+
+                &:focus {
+                    border-bottom: 2px solid variables.$bg-color;
+                }
+            }
+
+            .gap {
+                gap: 1rem;
+
+                .form-select {
+                    width: 18rem;
+
+                    padding: 1rem;
+                    font-size: 1.3rem;
+
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid #000;
+                    border-top: 2px solid #fff;
+                    transition: border 0.3s;
+
+                    &:focus {
+                        border-bottom: none;
+                        border-top: 2px solid variables.$bg-color;
+                    }
+                }
+            }
+
+            .form-submit {
+                width: 50%;
+
+                margin-top: 1rem;
+                padding: 1rem;
+                border-radius: 0.3rem;
+                font-size: 1.5rem;
+
+                background-color: variables.$tertiary-color;
+                color: #000;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: variables.$bg-color;
+                    color: #fff;
+                }
+            }
+        }
+
+        #total-tip {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
