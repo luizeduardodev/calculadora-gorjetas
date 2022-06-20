@@ -1,89 +1,191 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700?|PT++Mono);
-
 /* Reset geral */
-*{
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    box-sizing: border-box;
-    font-family: Lato, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Lato, sans-serif;
 }
-/* Variaveis */
-:root{
-    --primary-color: lightcoral;
-    --secundary-color: DimGrey;
-    --tertiary-color: GainsBoro;
+
+:root {
+  font-size: 62.5%;
 }
-body{
-    background-color: lightcoral;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
-.container-geral{
-    height: 520px;
-    width: 350px;
-    background-color: #f7f7f7;
-    box-shadow: 5px 5px 5px var(--tertiary-color);
-    border-radius: 20px;
+
+body {
+  font-size: 1.6rem;
 }
-.container-geral h1{
-    padding: 20px;
-    font-size: 1.2rem;
-    border-radius: 20px 20px 0 0;
-    text-transform: uppercase;
-    font-weight: normal;
-    text-align: center;
-    color: var(--secundary-color);
-    background-color: var(--tertiary-color);
+
+.tips-form-container-label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.container-geral .tips-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 20px 0px 0 40px;
+
+.label {
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
 }
-.container-geral .tips-form .label p{
-    font-size: 1rem;
+
+.span-input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
-.container-geral .tips-form .form-input{
-    width: 70px;
-    padding: 5px 5px 8px 8px;
-    font-size: 1rem;
-    background-color: white;
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #f08080;
 }
-.container-geral .tips-form .form-input:focus{
-    border: 3px solid var(--primary-color);
-    outline: none;
+#main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  width: 35rem;
+  height: 52rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #dcdcdc;
+          box-shadow: 0.2rem 0.2rem 0.2rem #dcdcdc;
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
 }
-.container-geral .tips-form .form-select{
-    width: 180px;
-    padding: 5px;
-    font-size: 0.9rem;
+#main .container h1 {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: #dcdcdc;
+  color: #696969;
 }
-.container-geral .tips-form .form-select:focus{
-    border: 3px solid var(--primary-color);
-    outline: none;
+#main .container .tips-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding-block: 2rem;
 }
-.container-geral .tips-form .people{
-    font-size: 1rem;
+#main .container .tips-form span {
+  font-size: 1.5rem;
 }
-.container-geral .tips-form .form-submit{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 40%;
-    padding: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    color: white;
-    border: none;
+#main .container .tips-form .form-input {
+  width: 50%;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
 }
-.container-geral #total-tip{
-    font-size: 1.2rem;
-    text-align: center;
+#main .container .tips-form .form-input:focus {
+  border-bottom: 2px solid #f08080;
 }
-.container-geral .total-tipp.transition{
-    transition: 1s ease-out;
+#main .container .tips-form .gap {
+  gap: 1rem;
 }
+#main .container .tips-form .gap .form-select {
+  width: 18rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #fff;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+#main .container .tips-form .gap .form-select:focus {
+  border-bottom: none;
+  border-top: 2px solid #f08080;
+}
+#main .container .tips-form .form-submit {
+  width: 50%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  background-color: #dcdcdc;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+#main .container .tips-form .form-submit:hover {
+  background-color: #f08080;
+  color: #fff;
+}
+#main .container #total-tip {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
